@@ -3,532 +3,1063 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ohin03</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css ">
+
+  <title>DriveLux — Find Your Next Car</title>
+
+  <meta
+    name="description"
+    content="DriveLux is a modern car marketplace for finding, buying and selling quality vehicles."
+  >
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+  >
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
 
-   <nav class="navbar navbar-expand-lg bg-secondary">
-    <div class="container">
-      <a href="" class="navbar-brand"><img src="logo.png.png" alt=""></a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#item1">
-        <img src="icon.png" alt="">
-      </button>
-      <div class="collapse navbar-collapse" id="item1">
-        <ul class="navbar-nav ms-auto ">
-          <li class="nav-item"><a href="" class="nav-link">Used Cars</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Auctions</a></li>
-          <li class="nav-item"><a href="" class="nav-link">New Cars</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Sell Cars</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Local Dealers</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Support</a></li>
-          <li class="nav-item"><a href="" class="nav-link signup"><i class="fa-solid fa-user"></i> sign up</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg main-navbar">
+  <div class="container">
+
+    <a class="navbar-brand brand" href="#">
+      <span class="brand-icon">
+        <i class="fa-solid fa-car-side"></i>
+      </span>
+
+      <span>Drive<span class="brand-accent">Lux</span></span>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNav"
+      aria-label="Toggle navigation"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+
+      <ul class="navbar-nav mx-auto nav-menu">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#cars">Browse Cars</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#categories">Categories</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#brands">Brands</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sell">Sell Your Car</a>
+        </li>
+
+      </ul>
+
+      <div class="nav-actions">
+
+        <a href="#" class="login-link">
+          <i class="fa-regular fa-user"></i>
+          Sign in
+        </a>
+
+        <a href="#sell" class="nav-btn">
+          Sell a car
+        </a>
+
       </div>
+
     </div>
-   </nav>
+  </div>
+</nav>
 
 
+<!-- =========================================================
+     HERO
+========================================================= -->
 
+<section class="hero" id="home">
 
+  <div class="hero-overlay"></div>
 
+  <div class="container hero-container">
 
+    <div class="hero-content">
 
+      <span class="eyebrow">
+        <i class="fa-solid fa-sparkles"></i>
+        The smarter way to buy a car
+      </span>
 
-   <section class="section1">
-    <div class="container">
-      <h1>Say hello to your next <br>
-          awesome vehicle</h1>
-          <p class="section1p" style="color: red;">Featuring Used, Wholesale and Salvage Cars, Trucks <br> & SUVs for Sale</p>
-          <div class="TopFooterSection">
-            <div class="row">
-              <div class="col-md-2 ">
-                <p>Type</p>
-                <select class="form-select">
-                  <option selected>Used Card</option>
-                  <option value="1">1 Card</option>
-                  <option value="2">2 Card</option>
-                  <option value="3">3 Card</option>
-                </select>
-              </div>
-               <div class="col-md-2">
-                <p>Make</p>
-                <select class="form-select ">
-                  <option selected>Infinity</option>
-                  <option value="1">1 Card</option>
-                  <option value="2">2 Card</option>
-                  <option value="3">3 Card</option>
-                </select>
-              </div>
-               <div class="col-md-2 withoutP">
-                <p></p>
-                <select class="form-select">
-                  <option selected>Year</option>
-                  <option value="1">1 Card</option>
-                  <option value="2">2 Card</option>
-                  <option value="3">3 Card</option>
-                </select>
-              </div>
-               <div class="col-md-2 withoutP">
-                <p></p>
-                <select class="form-select">
-                  <option selected>Modal</option>
-                  <option value="1">1 Card</option>
-                  <option value="2">2 Card</option>
-                  <option value="3">3 Card</option>
-                </select>
-              </div>
-              <div class="col-md-2 withoutP">
-                <p></p>
-                <select class="form-select">
-                  <option selected>Price</option>
-                  <option value="1">1 Card</option>
-                  <option value="2">2 Card</option>
-                  <option value="3">3 Card</option>
-                </select>
-              </div>
-              <div class="col-md-2 withoutP">
-                <button class="btn header"><i class="fa-brands fa-searchengin"></i> Search</button>
-              </div>
-            </div>
-          </div>
-    </div>
-   </section>
+      <h1>
+        Find a car that
+        <span>fits your life.</span>
+      </h1>
 
-
-
-
-
-
-   <section class="section2">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-2">
-        <img src="-5.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="Bitmap-1.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="Bitmap-2.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="Bitmap-3.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="Bitmap.png" alt="">
-      </div>
-      <div class="col-md-2">
-        <img src="-5.png" alt="">
-      </div>
-      </div>
-    </div>
-   </section>
-
-
-
-
-
-
-   <section class="section3 bg-danger-subtle">
-    <div class="container">
-    <div class="row">
-      <h3 class="text-center mt-4">Trending Near You</h3>
-      <div class="col-md-4">
-       <div class="card">
-         <img src="img2.png.png"  alt="" class="card-img-top" >
-        <div class="card-body">
-          <h5>Subaru Forester</h5>
-        <p>11 475 Miles</p>
-        <p>AWD . loem ipsom</p>
-        <div class="btn-group gap-2">
-          <button class="btn Button1">$21,480</button>
-          <button class="btn Button2">Buy Now</button>
-       </div>
-        </div>
-        </div>
-      </div>
-
-
-         <div class="col-md-4">
-       <div class="card">
-         <img src="img1.png.png" alt="" class="card-img-top">
-        <div class="card-body">
-          <h5>Subaru Forester</h5>
-        <p>11 475 Miles</p>
-        <p>AWD . loem ipsom</p>
-        <div class="btn-group gap-2">
-          <button class="btn Button1">$21,480</button>
-          <button class="btn Button2">Buy Now</button>
-       </div>
-        </div>
-        </div>
-      </div>
-
-         <div class="col-md-4">
-       <div class="card">
-         <img src="img2.png.png" alt="" class="card-img-top">
-        <div class="card-body">
-          <h5>Subaru Forester</h5>
-        <p>11 475 Miles</p>
-        <p>AWD . loem ipsom</p>
-        <div class="btn-group gap-2">
-          <button class="btn Button1">$21,480</button>
-          <button class="btn Button2">Buy Now</button>
-       </div>
-        </div>
-        </div>
-      </div>
-    </div>
-    </div>
-   </section>
-
-
-
-
-
-
-   <section class="section4 container">
-    <header class="FindCarHeader">
-      <h2 class="findCar">Find car by modal</h2>
-      <p class="ArrowArea">
-        1/6
-        <span><i class="fa-solid fa-arrow-left"></i></span>
-        <span><i class="fa-solid fa-arrow-right"></i></span>
+      <p class="hero-description">
+        Explore thousands of quality vehicles from trusted sellers.
+        Compare, discover and drive away with confidence.
       </p>
-    </header>
-    <section class="CarouselSection d-flex ">
-     <div class="product text-center">
-      <img src="car.png" alt="">
-      <div class="productDetails">
-        <p class="sedan">Sedan</p>
-        <button class="btn ProBtn">23,457 vehicles</button>
-      </div>
-     </div>
-      <div class="product text-center">
-      <img src="car1.png" alt="">
-      <div class="productDetails">
-        <p class="sedan">Suv</p>
-        <button class="btn ProBtn1">16,840 vehicles</button>
-      </div>
-     </div>
-      <div class="product text-center">
-      <img src="car2.png" alt="">
-      <div class="productDetails">
-        <p class="sedan">Coupe</p>
-        <button class="btn ProBtn1">19,700 vehicles</button>
-      </div>
-     </div>
-      <div class="product text-center">
-      <img src="car3.png" alt="">
-      <div class="productDetails">
-        <p class="sedan">Hatchback</p>
-        <button class="btn ProBtn1">12,550 vehicles</button>
-      </div>
-     </div>
-      <div class="product text-center">
-      <img src="car.png" alt="">
-      <div class="productDetails">
-        <p class="sedan">Sedan</p>
-        <button class="btn ProBtn1">23,457 vehicles</button>
-      </div>
-     </div>
-      <div class="product text-center">
-      <img src="car.png" alt="">
-      <div class="productDetails">
-        <p class="sedan">Sedan</p>
-        <button class="btn ProBtn1">23,457 vehicles</button>
-      </div>
-     </div>
-    </section>
-   </section>
 
+      <div class="hero-buttons">
 
+        <a href="#cars" class="primary-btn">
+          Explore vehicles
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
 
+        <a href="#categories" class="secondary-btn">
+          <i class="fa-regular fa-circle-play"></i>
+          Browse categories
+        </a>
 
+      </div>
 
-   
-   <section class="find-section">
-    <div class="container">
-      <div class="find-nav d-flex justify-content-between mb-5">
-        <h3>Find car by</h3>
-        <div class="btns d-flex">
-          <button class="btn btns-find">Body Types</button>
-          <button class="btn btns-find active">Makes</button>
-          <button class="btn btns-find">Models</button>
-          <button class="btn btns-find">Trending</button>
+      <div class="hero-trust">
+
+        <div class="trust-item">
+          <strong>25K+</strong>
+          <span>Vehicles</span>
         </div>
+
+        <div class="trust-line"></div>
+
+        <div class="trust-item">
+          <strong>4.9/5</strong>
+          <span>Customer rating</span>
+        </div>
+
+        <div class="trust-line"></div>
+
+        <div class="trust-item">
+          <strong>2K+</strong>
+          <span>Trusted dealers</span>
+        </div>
+
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <p class="PopularP">Popular Makes</p>
-          <div class="findItem d-flex">
-            <img src="dt.png.png" alt="">
-            <div class="FindDes">
-              <p class="Subaru">Subaru</p>
-              <p class="Num">2,345</p>
-            </div>
+
+    </div>
+
+
+    <!-- SEARCH CARD -->
+
+    <div class="hero-search-card">
+
+      <div class="search-card-header">
+
+        <div>
+          <span class="search-small-title">SEARCH INVENTORY</span>
+          <h3>What are you looking for?</h3>
+        </div>
+
+        <span class="search-live">
+          <i class="fa-solid fa-circle"></i>
+          Live inventory
+        </span>
+
+      </div>
+
+
+      <div class="search-tabs">
+
+        <button class="search-tab active">
+          <i class="fa-solid fa-car"></i>
+          Buy a car
+        </button>
+
+        <button class="search-tab">
+          <i class="fa-solid fa-tags"></i>
+          Sell a car
+        </button>
+
+      </div>
+
+
+      <div class="search-grid">
+
+        <div class="search-field">
+
+          <label>Condition</label>
+
+          <div class="field-value">
+            <span>Any condition</span>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
-          <div class="findItem d-flex">
-            <img src="Bitmap-1.png" alt="">
-            <div class="FindDes">
-              <p class="Subaru">Mercedes-Benz </p>
-              <p class="Num">12,890</p>
-            </div>
+
+        </div>
+
+
+        <div class="search-field">
+
+          <label>Make</label>
+
+          <div class="field-value">
+            <span>All makes</span>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
-          <div class="findItem d-flex">
-            <img src="dt1.png.png" alt="">
-            <div class="FindDes d-flex">
+
+        </div>
+
+
+        <div class="search-field">
+
+          <label>Model</label>
+
+          <div class="field-value">
+            <span>All models</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+        </div>
+
+
+        <div class="search-field">
+
+          <label>Price</label>
+
+          <div class="field-value">
+            <span>Any price</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+        </div>
+
+
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Search
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     BRANDS
+========================================================= -->
+
+<section class="brand-strip">
+
+  <div class="container">
+
+    <p class="brand-strip-title">
+      Trusted brands, endless possibilities
+    </p>
+
+    <div class="brand-logos">
+
+      <span>
+        <i class="fa-solid fa-star"></i>
+        SUBARU
+      </span>
+
+      <span>
+        <i class="fa-solid fa-shield-halved"></i>
+        MERCEDES
+      </span>
+
+      <span>
+        <i class="fa-solid fa-bolt"></i>
+        HYUNDAI
+      </span>
+
+      <span>
+        <i class="fa-solid fa-circle"></i>
+        VOLKSWAGEN
+      </span>
+
+      <span>
+        <i class="fa-solid fa-crown"></i>
+        BMW
+      </span>
+
+      <span>
+        <i class="fa-solid fa-road"></i>
+        TOYOTA
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FEATURED CARS
+========================================================= -->
+
+<section class="section featured-section" id="cars">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div>
+        <span class="section-label">HANDPICKED FOR YOU</span>
+
+        <h2>
+          Trending vehicles
+        </h2>
+
+        <p>
+          Discover popular cars selected from our latest inventory.
+        </p>
+      </div>
+
+      <a href="#" class="view-all">
+        View all vehicles
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+
+      <div class="col-lg-4 col-md-6">
+
+        <article class="car-card">
+
+          <div class="car-image">
+
+            <img src="img2.png.png" alt="Subaru Forester">
+
+            <span class="featured-badge">
+              Featured
+            </span>
+
+            <button class="heart-btn">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-card-body">
+
+            <div class="car-meta-top">
+              <span>2023</span>
+              <span>•</span>
+              <span>11,475 miles</span>
+            </div>
+
+            <h3>Subaru Forester</h3>
+
+            <p class="car-spec">
+              AWD · Automatic · 2.5L
+            </p>
+
+            <div class="card-bottom">
+
               <div>
-                <p class="Subaru">Hyundai</p>
-              <p class="Num">84,90</p>
+                <span class="price-label">Starting from</span>
+                <strong>$21,480</strong>
               </div>
-              <div class="MarginArrowIcon">
-                <i class="fa-solid fa-arrow-right"></i>
+
+              <button class="card-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- CARD 2 -->
+
+      <div class="col-lg-4 col-md-6">
+
+        <article class="car-card">
+
+          <div class="car-image">
+
+            <img src="img1.png.png" alt="Premium SUV">
+
+            <span class="featured-badge blue">
+              Great value
+            </span>
+
+            <button class="heart-btn">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-card-body">
+
+            <div class="car-meta-top">
+              <span>2022</span>
+              <span>•</span>
+              <span>18,240 miles</span>
+            </div>
+
+            <h3>Premium SUV</h3>
+
+            <p class="car-spec">
+              AWD · Automatic · Hybrid
+            </p>
+
+            <div class="card-bottom">
+
+              <div>
+                <span class="price-label">Starting from</span>
+                <strong>$28,900</strong>
               </div>
+
+              <button class="card-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+
             </div>
+
           </div>
-          <div class="findItem d-flex">
-            <img src="Bitmap.png" alt="">
-            <div class="FindDes">
-              <p class="Subaru">Volkswagen</p>
-              <p class="Num">19,300</p>
+
+        </article>
+
+      </div>
+
+
+      <!-- CARD 3 -->
+
+      <div class="col-lg-4 col-md-6">
+
+        <article class="car-card">
+
+          <div class="car-image">
+
+            <img src="img2.png.png" alt="Luxury Sedan">
+
+            <span class="featured-badge purple">
+              Popular
+            </span>
+
+            <button class="heart-btn">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+
+          </div>
+
+
+          <div class="car-card-body">
+
+            <div class="car-meta-top">
+              <span>2024</span>
+              <span>•</span>
+              <span>7,890 miles</span>
             </div>
+
+            <h3>Luxury Sedan</h3>
+
+            <p class="car-spec">
+              FWD · Automatic · 2.0L Turbo
+            </p>
+
+            <div class="card-bottom">
+
+              <div>
+                <span class="price-label">Starting from</span>
+                <strong>$32,750</strong>
+              </div>
+
+              <button class="card-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+
+            </div>
+
           </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CATEGORIES
+========================================================= -->
+
+<section class="section category-section" id="categories">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div>
+
+        <span class="section-label">EXPLORE BY TYPE</span>
+
+        <h2>Find the right body style</h2>
+
+        <p>
+          From practical SUVs to elegant sedans, find the perfect match.
+        </p>
+
+      </div>
+
+      <div class="carousel-controls">
+
+        <button id="prevBtn" class="carousel-btn">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <button id="nextBtn" class="carousel-btn active">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="category-wrapper">
+
+      <div class="category-track" id="categoryTrack">
+
+        <article class="category-card">
+
+          <div class="category-image">
+            <img src="car.png" alt="Sedan">
+          </div>
+
+          <h3>Sedan</h3>
+
+          <span>23,457 vehicles</span>
+
+        </article>
+
+
+        <article class="category-card">
+
+          <div class="category-image">
+            <img src="car1.png" alt="SUV">
+          </div>
+
+          <h3>SUV</h3>
+
+          <span>16,840 vehicles</span>
+
+        </article>
+
+
+        <article class="category-card">
+
+          <div class="category-image">
+            <img src="car2.png" alt="Coupe">
+          </div>
+
+          <h3>Coupe</h3>
+
+          <span>19,700 vehicles</span>
+
+        </article>
+
+
+        <article class="category-card">
+
+          <div class="category-image">
+            <img src="car3.png" alt="Hatchback">
+          </div>
+
+          <h3>Hatchback</h3>
+
+          <span>12,550 vehicles</span>
+
+        </article>
+
+
+        <article class="category-card">
+
+          <div class="category-image">
+            <img src="car.png" alt="Sedan">
+          </div>
+
+          <h3>Luxury</h3>
+
+          <span>8,920 vehicles</span>
+
+        </article>
+
+
+        <article class="category-card">
+
+          <div class="category-image">
+            <img src="car1.png" alt="SUV">
+          </div>
+
+          <h3>Electric</h3>
+
+          <span>5,430 vehicles</span>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="stats-section">
+
+  <div class="container">
+
+    <div class="stats-card">
+
+      <div class="stats-intro">
+
+        <span class="section-label light">
+          WHY DRIVELUX
+        </span>
+
+        <h2>
+          Car shopping,
+          <span>without the stress.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="stats-grid">
+
+        <div class="stat">
+
+          <strong>25K+</strong>
+
+          <span>
+            Quality vehicles
+          </span>
+
         </div>
 
 
+        <div class="stat">
 
-        <div class="col-md-4">
-          <p class="PopularP1">Other Makes</p>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Acura</p>
-              <p class="Num1">1,752</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Audi</p>
-              <p class="Num1">2,415</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">BMW</p>
-              <p class="Num1">4,590</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Bulck</p>
-              <p class="Num1">2,577</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Caddilac</p>
-              <p class="Num1">2,201</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Chevrolet</p>
-              <p class="Num1">24,187</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Chyrsler</p>
-              <p class="Num1">3,473</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Dadge</p>
-              <p class="Num1">9,325</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Ford</p>
-              <p class="Num1">2,4175</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Freighliner</p>
-              <p class="Num1">769</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">GMC</p>
-              <p class="Num1">5,403</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Harley</p>
-              <p class="Num1">1,069</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Honda</p>
-              <p class="Num1">14,516</p>
-            </div>
-          </div> 
-      </div>
+          <strong>2K+</strong>
+
+          <span>
+            Verified dealers
+          </span>
+
+        </div>
 
 
-      <div class="col-md-1">
+        <div class="stat">
 
-      </div>
-      <div class="col-md-3 mt-5">
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Infinite</p>
-              <p class="Num1">22,26</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">International</p>
-              <p class="Num1">415</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Isuzu</p>
-              <p class="Num1">220</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Jaugar</p>
-              <p class="Num1">485</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Jeep</p>
-              <p class="Num1">7,096</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Kia</p>
-              <p class="Num1">6,290</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Lamborghini</p>
-              <p class="Num1">18</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Land rover</p>
-              <p class="Num1">921</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Lexus</p>
-              <p class="Num1">4175</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Lincoln</p>
-              <p class="Num1">1,332</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Lotus</p>
-              <p class="Num1">43</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Masetri</p>
-              <p class="Num1">243</p>
-            </div>
-          </div>
-          <div class="findItem1">
-            <div class="FindDes1 ">
-              <p class="Subaru">Mazda</p>
-              <p class="Num1">2,928</p>
-            </div>
-          </div>   
+          <strong>98%</strong>
+
+          <span>
+            Happy customers
+          </span>
+
+        </div>
+
+
+        <div class="stat">
+
+          <strong>24/7</strong>
+
+          <span>
+            Customer support
+          </span>
+
+        </div>
+
       </div>
 
     </div>
-   </section>
+
+  </div>
+
+</section>
 
 
- <footer class="bg-primary-subtle">
+<!-- =========================================================
+     BRANDS / MAKE
+========================================================= -->
+
+<section class="section brands-section" id="brands">
+
   <div class="container">
-    <div class="row">
-    <div class="footer-column col-md-3 mt-5">
-      <h4>About</h4>
-      <ul>
-        <li><a href="">How its work</a></li>
-        <li><a href="">Careers</a></li>
-        <li><a href="">Media</a></li>
-        <li><a href="">About us</a></li>
-      </ul>
-    </div>
-    <div class="footer-column col-md-3 mt-5">
-      <h4>Community</h4>
-      <ul>
-        <li><a href="">Against Discrimination</a></li>
-        <li><a href="">Invite friends</a></li>
-        <li><a href="">Gift cards</a></li>
-     
-      </ul>
-    </div>
-    <div class="footer-column col-md-3 mt-5">
-      <h4>Become Seller</h4>
-      <ul>
-        <li><a href="">Add your vehicle</a></li>
-        <li><a href="">Business account</a></li>
-        <li><a href="">Resource center</a></li>
-        <li><a href="">Community</a></li>
-      </ul>
-    </div>
-    <div class="footer-column col-md-3 mt-5">
-      <h4>Booking support</h4>
-      <ul>
-        <li><a href="">Update for covid 19</a></li>
-        <li><a href="">Help center</a></li>
-        <li><a href="">Support</a></li>
-        <li><a href="">Trust & safety</a></li>
-      </ul>
-    </div>
-  </div>
-  </div>
- </footer>
 
- <div class="footer-end bg-body">
+    <div class="section-heading">
+
+      <div>
+
+        <span class="section-label">POPULAR MAKES</span>
+
+        <h2>Shop by brand</h2>
+
+        <p>
+          Explore vehicles from the world's most trusted manufacturers.
+        </p>
+
+      </div>
+
+      <a href="#" class="view-all">
+        All brands
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+
+    <div class="brand-grid">
+
+      <a href="#" class="make-card">
+        <span class="make-logo">S</span>
+        <div>
+          <strong>Subaru</strong>
+          <small>2,345 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">M</span>
+        <div>
+          <strong>Mercedes-Benz</strong>
+          <small>12,890 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">H</span>
+        <div>
+          <strong>Hyundai</strong>
+          <small>8,490 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">V</span>
+        <div>
+          <strong>Volkswagen</strong>
+          <small>19,300 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">B</span>
+        <div>
+          <strong>BMW</strong>
+          <small>4,590 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">T</span>
+        <div>
+          <strong>Toyota</strong>
+          <small>14,516 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">A</span>
+        <div>
+          <strong>Audi</strong>
+          <small>2,415 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">F</span>
+        <div>
+          <strong>Ford</strong>
+          <small>24,175 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">K</span>
+        <div>
+          <strong>Kia</strong>
+          <small>6,290 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">L</span>
+        <div>
+          <strong>Lexus</strong>
+          <small>4,175 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">J</span>
+        <div>
+          <strong>Jeep</strong>
+          <small>7,096 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+
+      <a href="#" class="make-card">
+        <span class="make-logo">G</span>
+        <div>
+          <strong>GMC</strong>
+          <small>5,403 vehicles</small>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     SELL CTA
+========================================================= -->
+
+<section class="cta-section" id="sell">
+
   <div class="container">
-  <div class="dt d-flex">
-     <h3>Privacy-policy</h3>
-     <h3>Term of use</h3>
-    
-     <p>2025 all right reserved</p>
-  </div>
-  </div>
- </div>
 
-   <script src="index.js"></script>
+    <div class="cta-card">
+
+      <div class="cta-content">
+
+        <span class="section-label light">
+          SELL YOUR VEHICLE
+        </span>
+
+        <h2>
+          Ready to turn your car
+          into cash?
+        </h2>
+
+        <p>
+          List your vehicle in minutes and connect with serious buyers
+          looking for their next car.
+        </p>
+
+        <a href="#" class="cta-button">
+          Start selling
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+
+      <div class="cta-decoration">
+
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+
+        <i class="fa-solid fa-car-side"></i>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a class="brand footer-logo" href="#">
+
+          <span class="brand-icon">
+            <i class="fa-solid fa-car-side"></i>
+          </span>
+
+          <span>
+            Drive<span class="brand-accent">Lux</span>
+          </span>
+
+        </a>
+
+        <p>
+          A smarter way to discover, compare and buy
+          your next vehicle.
+        </p>
+
+        <div class="social-links">
+
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Explore</h4>
+
+        <a href="#cars">Browse cars</a>
+        <a href="#categories">Body types</a>
+        <a href="#brands">Car brands</a>
+        <a href="#">Latest listings</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>For sellers</h4>
+
+        <a href="#sell">Sell your car</a>
+        <a href="#">Dealer account</a>
+        <a href="#">Seller resources</a>
+        <a href="#">Pricing</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Company</h4>
+
+        <a href="#">About us</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+        <a href="#">Support</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Support</h4>
+
+        <a href="#">Help center</a>
+        <a href="#">Safety</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 DriveLux. All rights reserved.
+      </span>
+
+      <span>
+        Designed & developed with care.
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="index.js"></script>
+
 </body>
 </html>
